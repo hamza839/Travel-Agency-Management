@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F8C8F04-0A7A-4CC3-B1A8-D94622ABFDBE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ahru</RootNamespace>
+    <AssemblyName>ahru</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\Downloads\iTextSharp_5.4.4\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_data.Designer.cs">
+      <DependentUpon>admin_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_login.Designer.cs">
+      <DependentUpon>admin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_panel.Designer.cs">
+      <DependentUpon>admin_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agent_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agent_data.Designer.cs">
+      <DependentUpon>agent_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs" />
+    <Compile Include="start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="start.Designer.cs">
+      <DependentUpon>start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cus_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cus_reg.Designer.cs">
+      <DependentUpon>cus_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Packages.Designer.cs">
+      <DependentUpon>Packages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_login.Designer.cs">
+      <DependentUpon>user_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agent_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agent_panel.Designer.cs">
+      <DependentUpon>agent_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view admin.Designer.cs">
+      <DependentUpon>view admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view agent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view agent.Designer.cs">
+      <DependentUpon>view agent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view bookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view bookings.Designer.cs">
+      <DependentUpon>view bookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view customer 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view customer 2.Designer.cs">
+      <DependentUpon>view customer 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view customer.Designer.cs">
+      <DependentUpon>view customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view packages 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view packages 2.Designer.cs">
+      <DependentUpon>view packages 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view packages.Designer.cs">
+      <DependentUpon>view packages.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin_data.resx">
+      <DependentUpon>admin_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_login.resx">
+      <DependentUpon>admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_panel.resx">
+      <DependentUpon>admin_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agent_data.resx">
+      <DependentUpon>agent_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cus_reg.resx">
+      <DependentUpon>cus_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Packages.resx">
+      <DependentUpon>Packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="user_login.resx">
+      <DependentUpon>user_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agent_panel.resx">
+      <DependentUpon>agent_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view admin.resx">
+      <DependentUpon>view admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view agent.resx">
+      <DependentUpon>view agent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view bookings.resx">
+      <DependentUpon>view bookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view customer 2.resx">
+      <DependentUpon>view customer 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view customer.resx">
+      <DependentUpon>view customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view packages 2.resx">
+      <DependentUpon>view packages 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view packages.resx">
+      <DependentUpon>view packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
